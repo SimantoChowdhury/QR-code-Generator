@@ -1,0 +1,98 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: o.2s ease;
+    text-decoration: none !important;
+}
+:root{
+    --bluecolor:#1DA1F2;
+    --blueColorHover:#1A8CD8;
+    --blackColor:#14171A;
+    --grayColor:#AAB8C2;
+    --darkTextColor:#4A4C4E;
+}
+body{
+    display:flex;
+    flex-direction: row;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 252, 246);
+    color: rgb(66, 212, 249);
+    gap: 2rem;
+}
+.form{
+    height: 23rem;
+    width: 21rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+.input{
+    height: 2.8rem;
+    width: 100%;
+    background-color: rgb(171, 238, 244);
+    border: none;
+    outline:none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 0.7rem;
+}
+.generate-qr-code-button{
+    height: 2.8rem;
+    width: 100%;
+    background-color:rgb(9, 255, 0);
+    color: rgb(2, 2, 2);
+    border: none;
+    outline:none;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 0.7rem;
+    cursor: pointer;
+   font-weight: 600;
+   gap: 1rem;
+}
+
+.generate-qr-code-button:hover{
+    background-color:red;
+}
+.qr-canvas{
+    height: 18rem;
+    width: 14rem;
+    background-color: rgb(6, 6, 6);
+    display: flex;
+    border-radius: 1rem;
+    color: rgb(76, 216, 241);
+padding: 1rem;
+flex-direction: column;
+position: relative;
+gap: 2rem;
+}
+.loader{
+margin-left: 50px;
+height: 5rem;
+width: 5rem;
+border-radius: 50%;
+border: 6px solid black;
+border-top-color:rgb(1, 255, 9);
+animation: spin 1s infinite;
+gap:3rem;
+}
+@keyframes spin {
+    0%{
+        transform: 0deg;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
